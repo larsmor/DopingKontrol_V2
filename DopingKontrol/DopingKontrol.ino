@@ -225,7 +225,7 @@ void check_Battery() {
 		tft.setTextColor(BLACK);
 		tft.setTextSize(2);
 		tft.setCursor(355, 100);
-		tft.print((percent < 100 ? (percent < 10 ? "  " : " ") : "") + String(percent, 1) + "%");
+		tft.print((percent < 100 ? (percent < 10 ? "  " : " ") : "") + String(percent, 2) + "%");
 		tft.setCursor(355, 120);
 		tft.print("  " + String(V_batt, 2) + "V");
 	}
